@@ -1,7 +1,7 @@
 # Project URLs
 
 W&B
-https://wandb.ai/jaylama-western-governors-university/nyc_airbnb?nw=nwuserjaylama
+https://wandb.ai/jaylama-western-governors-university/nyc_airbnb/workspace?nw=nwuserjaylama
 
 GitHub
 https://github.com/jwaker66/Project-Build-an-ML-Pipeline-Starter.git
