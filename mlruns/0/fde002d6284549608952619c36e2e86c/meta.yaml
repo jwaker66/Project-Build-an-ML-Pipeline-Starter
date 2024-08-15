@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jaylama/Project-Build-an-ML-Pipeline-Starter/mlruns/0/fde002d6284549608952619c36e2e86c/artifacts
+end_time: 1723719369906
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fde002d6284549608952619c36e2e86c
+run_name: upset-cod-18
+run_uuid: fde002d6284549608952619c36e2e86c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723719294010
+status: 3
+tags: []
+user_id: jaylama
