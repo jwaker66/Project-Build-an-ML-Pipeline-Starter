@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jaylama/Project-Build-an-ML-Pipeline-Starter/mlruns/0/4461467205b34532af4b86516dbc09a3/artifacts
+end_time: 1723722601686
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4461467205b34532af4b86516dbc09a3
+run_name: orderly-fawn-168
+run_uuid: 4461467205b34532af4b86516dbc09a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723722520548
+status: 3
+tags: []
+user_id: jaylama
