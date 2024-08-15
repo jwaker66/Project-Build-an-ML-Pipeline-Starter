@@ -17,7 +17,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import OrdinalEncoder, FunctionTransformer
+from sklearn.preprocessing import OrdinalEncoder, FunctionTransformer, OneHotEncoder
 
 import wandb
 from sklearn.ensemble import RandomForestRegressor
@@ -39,7 +39,6 @@ logger = logging.getLogger()
 
 
 def go(args):
-
     run = wandb.init(job_type="train_random_forest")
     run.config.update(args)
 
@@ -47,7 +46,7 @@ def go(args):
     with open(args.rf_config) as fp:
         rf_config = json.load(fp)
     run.config.update(rf_config)
-
+    
     # Fix the random seed for the Random Forest, so we get reproducible results
     rf_config['random_state'] = args.random_seed
 
@@ -75,6 +74,7 @@ def go(args):
     # Fit the pipeline sk_pipe by calling the .fit method on X_train and y_train
     # YOUR CODE HERE
     ######################################
+    sk_pipe.fit(X_train, y_train)
 
     # Compute r2 and MAE
     logger.info("Scoring")
@@ -95,21 +95,34 @@ def go(args):
     ######################################
     # Save the sk_pipe pipeline as a mlflow.sklearn model in the directory "random_forest_dir"
     # HINT: use mlflow.sklearn.save_model
-    signature = mlflow.models.infer_signature(X_val, y_pred)
+    X_val_transformed = sk_pipe.named_steps['preprocessor'].transform(X_val)
+
+    # Convert transformed X_val to DataFrame for MLflow
+    X_val_transformed_df = pd.DataFrame(X_val_transformed)
+
+    # Ensure that the DataFrame has no object types
+    for col in X_val_transformed_df.columns:
+        if X_val_transformed_df[col].dtype == 'object':
+            X_val_transformed_df[col] = X_val_transformed_df[col].astype(str)  # Convert objects to strings
+
+    # Infer signature using transformed DataFrame
+    signature = mlflow.models.infer_signature(X_val_transformed_df, y_pred)
+    
     mlflow.sklearn.save_model(
         # YOUR CODE HERE
-        signature = signature,
-        input_example = X_train.iloc[:5]
+        sk_pipe,
+        path="random_forest_dir",
+        signature=signature,
+        input_example=X_train.iloc[:5]
     )
     ######################################
-
 
     # Upload the model we just exported to W&B
     artifact = wandb.Artifact(
         args.output_artifact,
-        type = 'model_export',
-        description = 'Trained ranfom forest artifact',
-        metadata = rf_config
+        type='model_export',
+        description='Trained random forest artifact',
+        metadata=rf_config
     )
     artifact.add_dir('random_forest_dir')
     run.log_artifact(artifact)
@@ -122,9 +135,10 @@ def go(args):
     run.summary['r2'] = r_squared
     # Now save the variable mae under the key "mae".
     # YOUR CODE HERE
+    run.summary['mae'] = mae
     ######################################
 
-    # Upload to W&B the feture importance visualization
+    # Upload to W&B the feature importance visualization
     run.log(
         {
           "feature_importance": wandb.Image(fig_feat_imp),
@@ -165,6 +179,8 @@ def get_inference_pipeline(rf_config, max_tfidf_features):
     # 2 - A OneHotEncoder() step to encode the variable
     non_ordinal_categorical_preproc = make_pipeline(
         # YOUR CODE HERE
+        SimpleImputer(strategy="most_frequent"),  
+        OneHotEncoder(handle_unknown='ignore')
     )
     ######################################
 
@@ -228,6 +244,8 @@ def get_inference_pipeline(rf_config, max_tfidf_features):
     sk_pipe = Pipeline(
         steps =[
         # YOUR CODE HERE
+            ("preprocessor", preprocessor), 
+            ("random_forest", random_forest) 
         ]
     )
 
@@ -291,3 +309,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     go(args)
+

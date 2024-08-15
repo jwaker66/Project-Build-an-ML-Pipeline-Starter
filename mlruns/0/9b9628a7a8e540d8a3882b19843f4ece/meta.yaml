@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jaylama/Project-Build-an-ML-Pipeline-Starter/mlruns/0/9b9628a7a8e540d8a3882b19843f4ece/artifacts
+end_time: 1723720726449
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9b9628a7a8e540d8a3882b19843f4ece
+run_name: sassy-whale-624
+run_uuid: 9b9628a7a8e540d8a3882b19843f4ece
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723720656362
+status: 4
+tags: []
+user_id: jaylama

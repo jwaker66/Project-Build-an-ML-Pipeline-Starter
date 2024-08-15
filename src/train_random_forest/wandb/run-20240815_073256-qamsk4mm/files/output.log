@@ -1,0 +1,10 @@
+2024-08-15 07:32:59,815 Minimum price: 10, Maximum price: 350
+2024-08-15 07:32:59,828 Preparing sklearn pipeline
+2024-08-15 07:32:59,829 Fitting
+2024-08-15 07:33:14,335 Scoring
+2024-08-15 07:33:14,522 Score: 0.5549202269260246
+2024-08-15 07:33:14,523 MAE: 31.98331693316933
+2024-08-15 07:33:14,523 Exporting model
+/home/jaylama/miniconda3/envs/mlflow-211c8fb974d6215abb361efdc7b6c4bd9a3e8dfd/lib/python3.10/site-packages/_distutils_hack/__init__.py:32: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+[34m[1mwandb[39m[22m: Adding directory to artifact (./random_forest_dir)... Done. 0.0s

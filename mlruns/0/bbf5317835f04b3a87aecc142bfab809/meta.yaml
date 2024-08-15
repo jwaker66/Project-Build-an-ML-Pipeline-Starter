@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jaylama/Project-Build-an-ML-Pipeline-Starter/mlruns/0/bbf5317835f04b3a87aecc142bfab809/artifacts
+end_time: 1723721264145
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bbf5317835f04b3a87aecc142bfab809
+run_name: persistent-hen-674
+run_uuid: bbf5317835f04b3a87aecc142bfab809
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723721260608
+status: 4
+tags: []
+user_id: jaylama

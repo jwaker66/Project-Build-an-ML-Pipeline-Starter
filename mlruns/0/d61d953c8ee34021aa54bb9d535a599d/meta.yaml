@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jaylama/Project-Build-an-ML-Pipeline-Starter/mlruns/0/d61d953c8ee34021aa54bb9d535a599d/artifacts
+end_time: 1723721756320
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d61d953c8ee34021aa54bb9d535a599d
+run_name: glamorous-eel-676
+run_uuid: d61d953c8ee34021aa54bb9d535a599d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723721661434
+status: 3
+tags: []
+user_id: jaylama

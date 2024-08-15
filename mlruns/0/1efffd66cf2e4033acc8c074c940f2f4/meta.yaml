@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jaylama/Project-Build-an-ML-Pipeline-Starter/mlruns/0/1efffd66cf2e4033acc8c074c940f2f4/artifacts
+end_time: 1723720235670
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1efffd66cf2e4033acc8c074c940f2f4
+run_name: capable-bee-365
+run_uuid: 1efffd66cf2e4033acc8c074c940f2f4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723720148138
+status: 3
+tags: []
+user_id: jaylama

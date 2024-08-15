@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jaylama/Project-Build-an-ML-Pipeline-Starter/mlruns/0/a4cd03c9a3414c45b2e798d6f2441e82/artifacts
+end_time: 1723721343166
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a4cd03c9a3414c45b2e798d6f2441e82
+run_name: calm-hound-905
+run_uuid: a4cd03c9a3414c45b2e798d6f2441e82
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723721337771
+status: 4
+tags: []
+user_id: jaylama

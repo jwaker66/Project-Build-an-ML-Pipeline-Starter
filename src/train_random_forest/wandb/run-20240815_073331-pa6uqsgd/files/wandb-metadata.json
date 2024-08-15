@@ -1,0 +1,143 @@
+{
+    "os": "Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+    "python": "3.10.14",
+    "heartbeatAt": "2024-08-15T11:33:32.266195",
+    "startedAt": "2024-08-15T11:33:31.676068",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--trainval_artifact",
+        "trainval_data.csv:latest",
+        "--val_size",
+        "0.2",
+        "--random_seed",
+        "42",
+        "--stratify_by",
+        "neighbourhood_group",
+        "--rf_config",
+        "/home/jaylama/Project-Build-an-ML-Pipeline-Starter/multirun/2024-08-15/07-32-47/1/rf_config.json",
+        "--max_tfidf_features",
+        "5",
+        "--output_artifact",
+        "random_forest_export"
+    ],
+    "state": "running",
+    "program": "/home/jaylama/Project-Build-an-ML-Pipeline-Starter/src/train_random_forest/run.py",
+    "codePathLocal": "run.py",
+    "codePath": "src/train_random_forest/run.py",
+    "git": {
+        "remote": "https://jwaker66:@github.com/jwaker66/Project-Build-an-ML-Pipeline-Starter.git",
+        "commit": "e3cb7ffae759827c26eec8a903132a9f64b8f3f5"
+    },
+    "email": null,
+    "root": "/home/jaylama/Project-Build-an-ML-Pipeline-Starter",
+    "host": "DESKTOP-S9PI5VT",
+    "username": "jaylama",
+    "executable": "/home/jaylama/miniconda3/envs/mlflow-211c8fb974d6215abb361efdc7b6c4bd9a3e8dfd/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2994.4179999999997,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2994.418,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2994.418,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2994.418,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2994.418,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2994.418,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2994.418,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2994.418,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2994.418,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2994.418,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2994.418,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2994.418,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2994.418,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2994.418,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2994.418,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2994.418,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2994.418,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1006.853931427002,
+            "used": 14.264724731445312
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 2070",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2070",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 7.730804443359375
+    }
+}
