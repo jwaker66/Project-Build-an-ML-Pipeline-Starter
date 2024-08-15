@@ -1,0 +1,4 @@
+2024-08-15 06:29:09,867 Fetching raw dataset.
+2024-08-15 06:29:10,863 Cleaning data.
+2024-08-15 06:29:10,884 Converting last_review to datetime
+2024-08-15 06:29:10,898 Saving and exporting cleaned data.

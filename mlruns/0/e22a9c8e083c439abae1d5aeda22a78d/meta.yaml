@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jaylama/Project-Build-an-ML-Pipeline-Starter/mlruns/0/e22a9c8e083c439abae1d5aeda22a78d/artifacts
+end_time: 1723717758756
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e22a9c8e083c439abae1d5aeda22a78d
+run_name: painted-ram-714
+run_uuid: e22a9c8e083c439abae1d5aeda22a78d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723717701365
+status: 3
+tags: []
+user_id: jaylama
