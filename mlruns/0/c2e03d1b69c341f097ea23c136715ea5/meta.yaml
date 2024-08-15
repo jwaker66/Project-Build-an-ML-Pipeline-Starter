@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jaylama/Project-Build-an-ML-Pipeline-Starter/mlruns/0/c2e03d1b69c341f097ea23c136715ea5/artifacts
+end_time: 1723723648918
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c2e03d1b69c341f097ea23c136715ea5
+run_name: upbeat-horse-356
+run_uuid: c2e03d1b69c341f097ea23c136715ea5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723723628364
+status: 3
+tags: []
+user_id: jaylama

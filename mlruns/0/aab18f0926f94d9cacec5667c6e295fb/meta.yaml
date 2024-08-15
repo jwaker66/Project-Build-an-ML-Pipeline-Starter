@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jaylama/Project-Build-an-ML-Pipeline-Starter/mlruns/0/aab18f0926f94d9cacec5667c6e295fb/artifacts
+end_time: 1723723593243
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: aab18f0926f94d9cacec5667c6e295fb
+run_name: hilarious-pug-970
+run_uuid: aab18f0926f94d9cacec5667c6e295fb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723723574776
+status: 3
+tags: []
+user_id: jaylama
