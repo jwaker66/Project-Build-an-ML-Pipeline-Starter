@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jaylama/Project-Build-an-ML-Pipeline-Starter/mlruns/0/15881a685b3e4f7ea47e7bbe522de8a3/artifacts
+end_time: 1723716204578
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 15881a685b3e4f7ea47e7bbe522de8a3
+run_name: flawless-fox-922
+run_uuid: 15881a685b3e4f7ea47e7bbe522de8a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723716192029
+status: 3
+tags: []
+user_id: jaylama

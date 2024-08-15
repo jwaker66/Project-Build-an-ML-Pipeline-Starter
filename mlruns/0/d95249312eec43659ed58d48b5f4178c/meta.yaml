@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jaylama/Project-Build-an-ML-Pipeline-Starter/mlruns/0/d95249312eec43659ed58d48b5f4178c/artifacts
+end_time: 1723716204860
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d95249312eec43659ed58d48b5f4178c
+run_name: colorful-squid-325
+run_uuid: d95249312eec43659ed58d48b5f4178c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723716187380
+status: 3
+tags: []
+user_id: jaylama

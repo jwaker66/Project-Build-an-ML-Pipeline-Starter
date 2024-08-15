@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jaylama/Project-Build-an-ML-Pipeline-Starter/mlruns/0/e6d811f0db7449a6a2e9c379fe3cbd26/artifacts
+end_time: 1723715876400
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e6d811f0db7449a6a2e9c379fe3cbd26
+run_name: legendary-shad-44
+run_uuid: e6d811f0db7449a6a2e9c379fe3cbd26
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723715695418
+status: 3
+tags: []
+user_id: jaylama
